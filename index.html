@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Suyog Jamdar | Entry-Level Software Engineer · Java Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--surface:#0d0d10;--ink:#f2f3ff;--muted:#a6a9bd;--line:#24242b;--accent:#7b88ff;--accent2:#2fd8b0;--chip:#1a1c33;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="light"]{--bg:#f6f7fb;--surface:#fff;--ink:#14172b;--muted:#5b6078;--line:#e1e4f0;--accent:#3a4bff;--accent2:#00b894;--chip:#eceeff}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,sans-serif;line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'Bricolage Grotesque',Figtree,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:center;height:64px;gap:12px}
+.logo{font-family:'Bricolage Grotesque';font-weight:800;font-size:16px;text-decoration:none}
+.links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;max-width:100%}
+.links a{text-decoration:none;font-size:15px;color:var(--accent);background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding:6px 11px;border-radius:99px;white-space:nowrap;font-weight:500}
+.links a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:5px}
+#theme{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:99px;width:38px;height:38px;cursor:pointer;font-size:16px;flex:none}
+.hero{padding:72px 0 56px}
+.hero .grid{display:block}
+.role{display:inline-block;background:var(--chip);color:var(--accent);padding:4px 12px;border-radius:99px;font-weight:600;font-size:13px}
+.hero h1{font-size:clamp(17px,2.2vw,20px);font-weight:800;letter-spacing:-.01em;margin:14px 0 14px}
+.hero p.lead{color:var(--muted);max-width:56ch;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:7px 14px;font-size:13.5px;border-radius:9px;border:1px solid var(--line);background:var(--surface);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--accent);border-color:var(--accent)}
+.btn.primary{color:#000}
+:root[data-theme="light"] .btn.primary{color:#fff}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px}
+.contact li{list-style:none;display:flex;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line);word-break:break-word;font-size:15.5px}
+.contact li:last-child{border:0}
+.contact ul{margin:0;padding:0}
+.contact b{min-width:74px;color:var(--muted);font-weight:500}
+section{padding:60px 0}
+h2{font-size:clamp(17px,2.2vw,20px);color:#fff;letter-spacing:-.02em;margin-bottom:22px}
+:root[data-theme="light"] h2{color:var(--ink)}
+h2::after{content:"";display:block;width:56px;height:5px;border-radius:9px;background:linear-gradient(90deg,var(--accent),var(--accent2));margin-top:12px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.skills .card h3{font-size:16px;margin-bottom:4px}
+.skills .tag{color:var(--accent);font-weight:600;font-size:14px;margin:0 0 12px}
+ul.tick{margin:0;padding:0;list-style:none}
+ul.tick li{position:relative;padding-left:24px;margin:8px 0;font-size:16px;color:var(--muted)}
+ul.tick li::before{content:"";position:absolute;left:2px;top:.62em;width:9px;height:9px;border-radius:3px;background:var(--accent2)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--chip);color:var(--accent);padding:5px 13px;border-radius:99px;font-size:14.5px;font-weight:600}
+.project h3{font-size:19px;margin-bottom:12px}
+.edu{display:grid;gap:14px}
+.edu .row{display:grid;grid-template-columns:1fr auto;gap:6px 20px;align-items:center}
+.edu h3{font-size:16px}
+.edu p{margin:2px 0 0;color:var(--muted);font-size:15.5px}
+.score{font-family:'Bricolage Grotesque';font-weight:700;font-size:16px;color:var(--accent);text-align:right}
+.score small{display:block;color:var(--muted);font-family:Figtree;font-weight:500;font-size:14px}
+.cert{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.cert h3{font-size:16px}
+.cert p{margin:6px 0 0;color:var(--muted)}
+
+.cf{display:grid;gap:14px;max-width:640px}
+.cf .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cf label{display:grid;gap:6px;font-size:14px;font-weight:600;color:var(--muted)}
+.cf input,.cf select,.cf textarea{font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%}
+.cf textarea{min-height:120px;resize:vertical}
+.cf input,.cf select,.cf textarea{transition:border-color .15s,box-shadow .15s}
+.cf input:hover,.cf select:hover,.cf textarea:hover{border-color:color-mix(in srgb,var(--accent) 55%,var(--line))}
+.cf input:focus,.cf select:focus,.cf textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 25%,transparent)}
+.cf label:focus-within{color:var(--ink)}
+.cf .err{border-color:#ff6b6b!important;box-shadow:0 0 0 3px rgba(255,107,107,.18)}
+#cf-send:disabled{opacity:.6;cursor:wait!important}
+.cf .note{font-size:13.5px;color:var(--muted);margin:0}
+@media (max-width:760px){.cf .two{grid-template-columns:1fr}}
+footer{padding:36px 0 44px;border-top:1px solid var(--line);color:var(--muted);text-align:center;font-size:15px}
+@media (max-width:760px){
+ .hero{padding-top:44px}.hero .grid{grid-template-columns:1fr}
+ 
+ .edu .row{grid-template-columns:1fr}.score{text-align:left}
+ body{font-size:16.5px}
+}
+
+/* Lift-on-hover motion (same as Email / GitHub / LinkedIn buttons), applied site-wide */
+.card,.chip,.links a,.logo,footer a,#theme{transition:transform .15s,border-color .15s,box-shadow .15s,background .15s,color .15s}
+footer a{display:inline-block}
+@media (hover:hover){
+ .card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 8px 22px color-mix(in srgb,var(--accent) 16%,transparent)}
+ .chip:hover,.links a:hover,.logo:hover,footer a:hover,#theme:hover{transform:translateY(-2px)}
+ footer a:hover{color:var(--accent)}
+}
+.card:focus-within{border-color:var(--accent)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.card,.chip,.links a,.logo,footer a,#theme{transition:none}.card:hover,.chip:hover,.links a:hover,.logo:hover,footer a:hover,#theme:hover,.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+ <nav class="links" aria-label="Sections">
+  <a href="#about">Summary</a><a href="#skills">Skills</a><a href="#project">Project</a><a href="#education">Education</a><a href="#certs">Certifications</a><a href="#more">Additional</a><a href="#contact">Contact</a>
+ </nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap grid">
+ <div>
+  <span class="role">Entry-Level Software Engineer | Java Developer</span>
+  <h1>Suyog Jamdar</h1>
+  <p class="lead">B.E. Information Technology graduate seeking an entry-level Software Engineer role, with a strong base in Java, OOP, SQL and Python.</p>
+  <div class="btns">
+   <a class="btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=jamdar.suyog@gmail.com" target="_blank" rel="noopener">Email me</a>
+   <a class="btn" href="https://github.com/SuyogJamdar" target="_blank" rel="noopener">GitHub</a>
+   <a class="btn" href="https://www.linkedin.com/in/suyog-jamdar" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+ </div>
+</div></div>
+
+<section id="about"><div class="wrap">
+ <h2>Professional Summary</h2>
+ <div class="card"><ul class="tick" style="max-width:75ch">
+  <li>Fresher and motivated B.E. Information Technology graduate seeking an entry-level Software Engineer role.</li>
+  <li>Proficient in Java, OOP principles, SQL, and Python, with academic exposure to data structures, algorithms, and the software development lifecycle (SDLC).</li>
+  <li>Completed an academic project applying machine learning and Flask for a real-world HR problem.</li>
+  <li>Familiar with Git version control, Agile methodology, REST API concepts, and AWS cloud fundamentals.</li>
+  <li>Strong analytical thinking, debugging aptitude, and eagerness to learn and grow in a professional software development environment.</li>
+ </ul></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+ <h2>Technical Skills</h2>
+ <div class="skills">
+  <div class="card"><h3>Programming Language</h3><p class="tag">Java</p><ul class="tick">
+   <li>Object-oriented programming (OOP) concepts: Inheritance, Polymorphism, Abstraction, and Encapsulation.</li>
+   <li>Collections Framework, Exception Handling, Multithreading, JDBC, File Handling.</li>
+   <li>Arrays, Strings, Method Overloading &amp; Overriding, Data Structures (Stacks, Queues, LinkedLists, HashMaps).</li></ul></div>
+  <div class="card"><h3>Database</h3><p class="tag">SQL</p><ul class="tick">
+   <li>Good understanding of RDBMS concepts like Constraints, Normalization, Tables, and Relationships.</li>
+   <li>Good understanding of SQL concepts like Grouping, Subqueries, Functions, and Joins.</li>
+   <li>SQL Joins and good knowledge of DDL, DML, DCL and TCL.</li></ul></div>
+  <div class="card"><h3>Web &amp; Frameworks</h3><p class="tag">Spring · Spring Boot · Flask · REST API</p><ul class="tick">
+   <li>Built a Flask web application for real-time ML prediction as part of academic project.</li>
+   <li>Familiar with REST API concepts and HTTP request/response lifecycle (academic).</li></ul></div>
+  <div class="card"><h3>ML &amp; Data</h3><p class="tag">Python · scikit-learn · pandas</p><ul class="tick">
+   <li>Machine Learning fundamentals: Data Preprocessing, Feature Engineering, Model Training and Evaluation.</li>
+   <li>Hands-on academic experience with scikit-learn, pandas, and NumPy for data analysis and ML pipelines.</li></ul></div>
+  <div class="card"><h3>Machine Learning</h3><p class="tag">Basic Concepts and Fundamentals</p><div class="chips"><span class="chip">scikit-learn</span><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">academic</span></div></div>
+  <div class="card"><h3>Cloud Computing</h3><p class="tag">Basics of Cloud Computing</p><ul class="tick">
+   <li>IaaS, PaaS, SaaS, Cloud Deployment Models.</li>
+   <li>AWS fundamentals — EC2, S3 (conceptual).</li></ul></div>
+  <div class="card" style="grid-column:1/-1"><h3>Tools &amp; Practices</h3><div class="chips" style="margin-top:12px"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Agile / Scrum (academic)</span><span class="chip">SDLC</span><span class="chip">Unit Testing basics</span><span class="chip">Debugging</span><span class="chip">Problem Solving</span></div></div>
+ </div>
+</div></section>
+
+<section id="project"><div class="wrap">
+ <h2>Project</h2>
+ <article class="card project">
+  <h3>Employee Churn Prediction System</h3>
+  <div class="chips" style="margin-bottom:16px"><span class="chip">Python</span><span class="chip">Machine Learning</span><span class="chip">Flask</span></div>
+  <ul class="tick">
+   <li>Developed a machine learning-based employee churn prediction system to identify employees likely to leave the organisation.</li>
+   <li>Performed data preprocessing, feature engineering, and model training using historical employee data.</li>
+   <li>Analysed factors such as job satisfaction, salary, performance ratings, overtime, and years of experience to predict attrition.</li>
+   <li>Built a user-friendly web interface using Flask for real-time prediction and result visualisation.</li>
+   <li>Improved decision-making by providing insights into employee retention and workforce management.</li>
+  </ul>
+ </article>
+</div></section>
+
+<section id="education"><div class="wrap">
+ <h2>Education</h2>
+ <div class="edu">
+  <div class="card row"><div><h3>B.E. in Information Technology</h3><p>PRMIT&amp;R, Badnera, Amravati</p><p>2022 – 2026</p></div><div class="score">7.0<small>CGPA</small></div></div>
+  <div class="card row"><div><h3>Higher Secondary Certificate (HSC) – Class XII</h3><p>Bhartiya Vidyalay, Amravati</p><p>2022</p></div><div class="score">67%<small>Percentage</small></div></div>
+  <div class="card row"><div><h3>Secondary School Certificate (SSC) – Class X</h3><p>Takhatmal English High School, Amravati</p><p>2020</p></div><div class="score">84.60%<small>Percentage</small></div></div>
+ </div>
+</div></section>
+
+<section id="certs"><div class="wrap">
+ <h2>Certifications</h2>
+ <div class="cert">
+  <div class="card"><h3>AWS Cloud Virtual Internship</h3><p>Amazon Web Services · July – September 2024</p></div>
+  <div class="card"><h3>Java Programming Fundamentals</h3></div>
+ </div>
+</div></section>
+
+<section id="more"><div class="wrap">
+ <h2>Additional Skills</h2>
+ <div class="skills">
+  <div class="card"><h3>Soft Skills</h3><div class="chips" style="margin-top:14px"><span class="chip">Problem Solving</span><span class="chip">Analytical Thinking</span><span class="chip">Agile Teamwork</span><span class="chip">Time Management</span><span class="chip">Verbal &amp; Written Communication</span><span class="chip">Debugging</span></div></div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <h2>Contact Me</h2>
+ <div class="card">
+  <p style="margin:0 0 18px;color:var(--muted);max-width:65ch">Know of an opportunity that matches my skillset? Fill in the details below and send it to me.</p>
+  <div class="cf">
+   <div class="two">
+    <label>Your name<input id="cf-name" type="text" placeholder="Full name"></label>
+    <label>Your email<input id="cf-email" type="email" placeholder="you@example.com"></label>
+   </div>
+   <div class="two">
+    <label>Company / Organisation<input id="cf-org" type="text" placeholder="Company name"></label>
+    <label>Opportunity type<select id="cf-type"><option>Job opening</option><option>Internship</option><option>Project / Freelance</option><option>Referral</option><option>Other</option></select></label>
+   </div>
+   <label>Message<textarea id="cf-msg" placeholder="Role, skills required, location, how to reach you..."></textarea></label>
+   <div><button class="btn primary" id="cf-send" type="button" style="cursor:pointer;font:inherit;font-weight:600">Send message</button></div>
+   <p class="note" id="cf-status" role="status">Your message goes straight to my inbox.</p>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© Suyog Jamdar · Amravati, Maharashtra, India · <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jamdar.suyog@gmail.com" target="_blank" rel="noopener">jamdar.suyog@gmail.com</a><div style="margin-top:10px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap"><a href="https://github.com/SuyogJamdar" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/suyog-jamdar" target="_blank" rel="noopener">LinkedIn</a></div></div></footer>
+
+<script>
+
+document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a)return;var h=a.getAttribute('href');e.preventDefault();var t=h==='#top'?document.body:document.querySelector(h);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});
+
+document.getElementById('cf-send').addEventListener('click',function(){
+var g=function(i){return document.getElementById(i).value.trim()};
+var st=document.getElementById('cf-status'),btn=this;
+var d={name:g('cf-name'),email:g('cf-email'),company:g('cf-org'),opportunity_type:g('cf-type'),message:g('cf-msg')};
+var bad=[];if(!d.name)bad.push('cf-name');if(!/^\S+@\S+\.\S+$/.test(d.email))bad.push('cf-email');if(!d.message)bad.push('cf-msg');['cf-name','cf-email','cf-msg'].forEach(function(x){document.getElementById(x).classList.toggle('err',bad.indexOf(x)>-1)});
+if(bad.length){document.getElementById(bad[0]).focus();st.textContent='Please enter your name, a valid email and a message.';st.style.color='#ff6b6b';return;}
+d._subject='Portfolio opportunity: '+d.opportunity_type+(d.company?' at '+d.company:'');
+d._captcha='false';d._template='table';
+btn.disabled=true;st.style.color='var(--muted)';st.textContent='Sending...';
+var fallback=function(){var a=document.createElement('a');
+a.href='https://mail.google.com/mail/?view=cm&fs=1&to=jamdar.suyog@gmail.com&su='+encodeURIComponent(d._subject)+'&body='+encodeURIComponent('Name: '+d.name+'\nEmail: '+d.email+'\nCompany: '+d.company+'\n\n'+d.message);
+a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+st.textContent='Could not send directly, so an email draft was opened for you to send.';btn.disabled=false;};
+fetch('https://formsubmit.co/ajax/jamdar.suyog@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
+.then(function(r){return r.json()}).then(function(x){
+ if(x&&(x.success===true||x.success==='true')){st.style.color='#2fd8b0';st.textContent='Thank you! Your message has been sent.';
+  ['cf-name','cf-email','cf-org','cf-msg'].forEach(function(i){document.getElementById(i).value=''});btn.disabled=false;}
+ else{fallback();}}).catch(fallback);
+});
+document.querySelectorAll('.cf input,.cf textarea').forEach(function(el){el.addEventListener('input',function(){el.classList.remove('err')})});
+</script>
+</body>
+</html>
