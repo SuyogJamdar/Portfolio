@@ -35,6 +35,6 @@ Upload index.html to a public repository named after your username followed by g
 
 Contact
 
-Email: jamdar.suyog@gmail.com Phone: +91 9284210166 LinkedIn: linkedin.com/in/suyog-jamdar GitHub: github.com/SuyogJamdar Location: Amravati, Maharashtra, India
+Email: jamdar.suyog@gmail.com LinkedIn: linkedin.com/in/suyog-jamdar GitHub: github.com/SuyogJamdar 
 
 Thank you for visiting my portfolio.
