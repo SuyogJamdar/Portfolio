@@ -1,4 +1,4 @@
-Suyog Jamdar Portfolio Website
+Suyog Jamdar Portfolio Website -
 
 This is my personal portfolio website. I am a B.E. Information Technology graduate looking for an entry-level Software Engineer role, and I made this site to show my skills, my project and my background in one place. Anyone who knows of an opportunity that suits my skills can contact me through the form at the bottom of the page.
 
