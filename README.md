@@ -2,7 +2,7 @@ Suyog Jamdar Portfolio Website -
 
 This is my personal portfolio website. I am a B.E. Information Technology graduate looking for an entry-level Software Engineer role, and I made this site to show my skills, my project and my background in one place. Anyone who knows of an opportunity that suits my skills can contact me through the form at the bottom of the page.
 
-Live website: 
+Live website:  https://suyogjamdar.github.io/Portfolio/
 About the project
 
 The website follows the details of my resume. It has a professional summary, technical skills, my academic project, education, certifications, additional skills and a contact section. The design is dark with blue and green highlights, and it works well on phones, tablets and computers.
