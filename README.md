@@ -18,7 +18,7 @@ HTML5 for the structure of the page. CSS3 for the styling, using CSS variables, 
 
 The whole website is one index.html file. There is no framework, no build step and nothing to install.
 
-How I made it
+How I made it -
 
 I first collected all the details from my resume and kept the wording the same. Then I arranged the content into clear sections and built the page with the help of an HTML & CSS . After that I reviewed the result and improved it step by step, changing the colours, font sizes, buttons and links until it looked right. I also added the contact form so recruiters can reach me easily. Finally I tested it on mobile and desktop screens and published it with GitHub Pages.
 
